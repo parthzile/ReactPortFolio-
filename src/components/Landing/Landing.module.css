@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Gotham-medium;
+    src: url(../../assets/fonts/gotham-medium.woff2);
+}
+
+*{
+    background-color: #111111;
+}
+
+.landing{
+    margin-top: 225px;
+    margin-left: 275px;
+}
+
+.name{
+    color: #CECECE;
+    font-size: 23px;
+    font-family: Gotham-medium;
+    letter-spacing: 5px;
+    padding-left: 5px;
+}
+
+.titleContainer{
+    display: flex;
+    align-items: center;
+}
+
+.titleOne, .titleTwo{
+    color: white;
+    font-family: Gotham-medium;
+    font-size: 100px;
+}
+
+.divider{
+    width: 25%;
+    height: 2px;
+    background-color: #CECECE;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+
+.addSign{
+    color: #707070;
+}
