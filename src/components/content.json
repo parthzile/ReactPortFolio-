@@ -1,8 +1,8 @@
 {
-    "navLinks" : [
-        "contact",
-        "details",
-        "projects",
-        "articles"
-    ]
+  "navLinks": ["contact", "details", "projects", "articles"],
+  "landingSection": {
+    "name": "parth zile",
+    "titleOne": "Developer",
+    "titleTwo": "Engineer"
+  }
 }
