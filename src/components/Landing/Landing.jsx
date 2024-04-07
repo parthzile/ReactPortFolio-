@@ -1,25 +1,32 @@
-import styles from './Landing.module.css'
-import content from "../content.json"
+import styles from "./Landing.module.css";
+import content from "../content.json";
 
-const name = (content.landingSection.name).toUpperCase()
-const titleOne = content.landingSection.titleOne
-const titleTwo = content.landingSection.titleTwo
+const name = content.landingSection.name.toUpperCase();
+const titleOne = content.landingSection.titleOne;
+const titleTwo = content.landingSection.titleTwo;
 
 const Landing = () => {
+  return (
+    <div className={styles.landing}>
+      <div className={styles.name}>{name}</div>
+      <div className={styles.titleContainer}>
+        <div className={styles.titleOne}>{titleOne}</div>
+        <div className={styles.divider}></div>
+      </div>
+      <div className={styles.titleTwo}>
+        {" "}
+        <span className={styles.addSign}>+</span> {titleTwo}
+      </div>
 
-    return(
-            <div className={styles.landing}>
-                <div className={styles.name}>{name}</div>
-                <div className={styles.titleContainer}>
+      <span className={styles.scrollbtn}>
+        <a href="#">
+          <span className={styles.mouse}>
+            <span></span>
+          </span>
+        </a>
+      </span>
+    </div>
+  );
+};
 
-                <div className={styles.titleOne}>{titleOne}</div>
-                <div className={styles.divider}></div>
-                </div>
-                <div className={styles.titleTwo}> <span className={styles.addSign}>+</span> {titleTwo}</div>
-
-                
-            </div>
-    )
-}
-
-export default Landing
+export default Landing;
