@@ -19,11 +19,9 @@ const Landing = () => {
       </div>
 
       <span className={styles.scrollbtn}>
-        <a href="#">
           <span className={styles.mouse}>
             <span></span>
           </span>
-        </a>
       </span>
     </div>
   );
