@@ -3,13 +3,17 @@
   src: url(../../assets/fonts/gotham-medium.woff2);
 }
 
-* {
-  background-color: #111111;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .landing {
   margin-top: 225px;
   margin-left: 275px;
+  height: 70vh;
+  background-color: #111111;
 }
 
 .name {

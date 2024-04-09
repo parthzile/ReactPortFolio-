@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  
+  display: flex;
+  justify-content: space-between;
+  background-color: #111111;
+}
+
+.leftContainer{
+  width: 8%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.rightContainer{
+  width: 92%;
+  margin-left: 8%;
+  
+}

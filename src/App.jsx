@@ -1,17 +1,19 @@
-import "./App.css";
+import  styles from "./App.module.css";
 import Landing from "./components/Landing/Landing";
 import Navbar from "./components/Navbar/Navbar";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 function App() {
   return (
     <>
-      <div className="container">
-        <div className="left">
+      <div className={styles.container}>
+        <div className={styles.leftContainer}>
           <Navbar />
         </div>
 
-        <div className="right">
+        <div className={styles.rightContainer}>
           <Landing />
+          <AboutMe />
         </div>
       </div>
     </>
