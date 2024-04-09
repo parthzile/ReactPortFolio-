@@ -5,12 +5,20 @@
     "titleOne": "Developer",
     "titleTwo": "Engineer"
   },
-  "aboutMe" : {
-    "srNo" : "01",
-    "titleOne" : "About Me",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  "aboutMe": {
+    "srNo": "01",
+    "titleOne": "about me",
+    "description": "Designing a platform to help educators build better online courseware",
+    "button": "about me "
   },
-  "past experiences" : "random shit"
-
+  "pastExp": {
+    "srNo": "02",
+    "titleOne": "past experience",
+    "description": "Designing a platform to help educators build better online courseware",
+    "button": "click here"
+  },
+  "intro": {
+    "delegation": "hi there",
+    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+  }
 }
-

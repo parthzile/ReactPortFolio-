@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Gotham-book;
+    src: url(../../assets/fonts/gotham-book.woff2);
+  }
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: Gotham-book;
+}
+
+.content{
+    width: 50%;
+    align-self: center;
+    padding-left: 150px;
+    padding-right: 100px;
+}
+
+.creative{
+    width: 50%;
+    border: 1px solid yellow
+}
+
+.srNo{
+    color: #00EEFF;
+    margin-bottom: 21px;
+    font-weight: bold;
+}
+
+.titleOne{
+    color: white;
+    margin-bottom: 24px;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.description{
+    color: #CDCDCD;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.button{
+    height: 56px;
+    width: 194px;
+    background-color: #00EEFF;
+    color: black;
+    font-family: Gotham-book;
+    font-size: 18px;
+    font-weight:900;
+    margin-top: 32px;
+}
