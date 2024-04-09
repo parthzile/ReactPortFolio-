@@ -9,11 +9,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap:30px;
+  gap: 30px;
   background-color: #111111;
   font-family: Gotham-medium;
   padding: 40px 10px 25px;
-  
 }
 
 .logo {
@@ -22,7 +21,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .navbar {
@@ -32,13 +30,11 @@
   writing-mode: tb-rl;
   transform: rotate(-180deg);
   align-content: center;
-  
 }
 
 .links {
   display: flex;
   justify-content: space-around;
-
 }
 
 .social {
@@ -48,7 +44,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap:10px;
+  gap: 10px;
   padding: 25px;
-  
 }

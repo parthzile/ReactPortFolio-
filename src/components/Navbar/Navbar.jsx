@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className={navbar.container}>
       <div className={navbar.logo}>
-        <FaFileImage style={{ color: '#CECECE', fontSize: '20px' }}/>
+        <FaFileImage style={{ color: "#CECECE", fontSize: "20px" }} />
       </div>
       <div className={navbar.navbar}>
         <div className={navbar.links}>
@@ -23,9 +23,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className={navbar.social}>
-      <BsTwitterX style={{ color: '#CECECE', fontSize: '20px' }} />
-      <FaGithub style={{ color: '#CECECE', fontSize: '20px' }} />
-      < FaLinkedin style={{ color: '#CECECE', fontSize: '20px' }} />
+        <BsTwitterX style={{ color: "#CECECE", fontSize: "20px" }} />
+        <FaGithub style={{ color: "#CECECE", fontSize: "20px" }} />
+        <FaLinkedin style={{ color: "#CECECE", fontSize: "20px" }} />
       </div>
     </div>
   );
