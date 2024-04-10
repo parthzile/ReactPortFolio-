@@ -45,11 +45,12 @@
 .button {
   height: 56px;
   width: 194px;
-  background-color: #00eeff;
   color: black;
   font-family: Gotham-book;
   font-size: 18px;
   font-weight: 900;
   margin-top: 32px;
   text-transform: capitalize;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 74.49%, 93.29% 100%, 0% 100%);
+  background-color: #00eeff;
 }
