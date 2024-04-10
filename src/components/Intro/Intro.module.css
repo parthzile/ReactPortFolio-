@@ -11,14 +11,14 @@
 }
 
 .content {
-  width: 50%;
+  width: 45%;
   align-self: center;
   padding-left: 150px;
   padding-right: 100px;
 }
 
 .creative {
-  width: 50%;
+  width: 55%;
   /* border: 1px solid yellow; */
 }
 

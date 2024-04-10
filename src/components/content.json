@@ -4,10 +4,10 @@
     "name": "parth zile",
     "titleOne": "Developer",
     "titleTwo": [
+      "Human",
       "Engineer",
       "Innovator",
-      "Entrepreneur",
-      "Human"
+      "Entrepreneur"
     ]
   },
   "aboutMe": {
@@ -28,7 +28,7 @@
   },
   "hindText": {
     "whoAmI" : "मैं कौन हूँ",
-    "aboutMe" : "पहचान",
+    "aboutMe" : "पैहचान",
     "experience" : "अनुभव"
   }
 }
