@@ -1,12 +1,29 @@
 import styles from "./Landing.module.css";
 import content from "../content.json";
 import Animation from "../Animation/Animation";
+import { useState,useEffect } from "react";
 
 const name = content.landingSection.name.toUpperCase();
 const titleOne = content.landingSection.titleOne;
-// const titleTwo = content.landingSection.titleTwo;
 
 const Landing = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+      const handleScroll = () => {
+          const scrollTop = window.scrollY || document.documentElement.scrollTop;
+          const shouldFade = scrollTop > 100; // Adjust the scroll position threshold as needed
+
+          setIsVisible(!shouldFade);
+      };
+
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
+
   return (
     <div className={styles.landing}>
       <div className={styles.name}>{name}</div>
@@ -18,11 +35,11 @@ const Landing = () => {
         <span className={styles.addSign}>+</span> <Animation />
       </div>
 
-      <span className={styles.scrollbtn}>
-        <span className={styles.mouse}>
-          <span></span>
-        </span>
-      </span>
+      <div className={`${styles.scrollbtn} ${isVisible ? '' : styles['fade-out']}`}>
+            <div className={styles.mouse}>
+                <div></div>
+            </div>
+        </div>
     </div>
   );
 };
