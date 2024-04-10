@@ -1,5 +1,6 @@
 import styles from "./Intro.module.css";
 import content from "../content.json";
+import HindiText from "../HindiText/HindiText";
 
 const Intro = () => {
   return (
@@ -8,7 +9,9 @@ const Intro = () => {
         <h2 className={styles.titleOne}>{content.intro.delegation}</h2>
         <p className={styles.description}>{content.intro.introduction}</p>
       </div>
-      <div className={styles.creative}></div>
+      <div className={styles.creative}>
+        <HindiText text="whoAmI"/>
+      </div>
     </div>
   );
 };

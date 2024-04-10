@@ -24,19 +24,19 @@ const Animation = () => {
         typeWriter(dataText[i], 0, () => {
           setTimeout(() => {
             startTextAnimation(i + 1);
-          }, 2000); // Delay before starting the next text
+          }, 2000); 
         });
       } else {
         setTimeout(() => {
-          startTextAnimation(0); // Restart animation loop
-        }, 20000); // Delay before restarting the animation loop
+          startTextAnimation(0); 
+        }, 20000);
       }
     };
 
     startTextAnimation(textIndex);
 
     return () => {
-      // Clean up any ongoing animations or timers if the component unmounts
+      
     };
   }, [textIndex]);
 

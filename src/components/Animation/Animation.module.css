@@ -15,7 +15,7 @@
   color: white;
 }
 .span {
-  border-right: 7px solid;
+  border-right: 7px solid #00eeff;
   animation: caret 1s steps(1) infinite;
 }
 

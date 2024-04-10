@@ -25,5 +25,10 @@
   "intro": {
     "delegation": "hi there",
     "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+  },
+  "hindText": {
+    "whoAmI" : "मैं कौन हूँ",
+    "aboutMe" : "मेरी पहचान",
+    "experience" : "अनुभव"
   }
 }

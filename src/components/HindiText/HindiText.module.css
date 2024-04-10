@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Gotham-book;
+    src: url(../../assets/fonts/gotham-book.woff2);
+  }
+
+
+  .bgText{
+    color: white;
+    font-size: 175px;
+    font-family: Gotham-book;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align at the end vertically */
+    height: 100%;
+    padding-bottom: 35px;
+  }

@@ -1,6 +1,7 @@
 import styles from "./About.module.css";
 import content from "../content.json";
 import { FaArrowRight } from "react-icons/fa";
+import HindiText from "../HindiText/HindiText";
 
 const AboutMe = () => {
   return (
@@ -18,7 +19,9 @@ const AboutMe = () => {
         </button>
       </div>
 
-      <div className={styles.creative}></div>
+      <div className={styles.creative}>
+      <HindiText text="aboutMe"/>
+      </div>
     </div>
   );
 };
