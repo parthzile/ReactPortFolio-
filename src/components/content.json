@@ -3,7 +3,12 @@
   "landingSection": {
     "name": "parth zile",
     "titleOne": "Developer",
-    "titleTwo": "Engineer"
+    "titleTwo": [
+      " Engineer",
+      " Innovator",
+      " Random ",
+      " Words"
+    ]
   },
   "aboutMe": {
     "srNo": "01",

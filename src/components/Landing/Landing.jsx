@@ -1,7 +1,6 @@
 import styles from "./Landing.module.css";
 import content from "../content.json";
-import Animation
- from "../Animation/Animation";
+import Animation from "../Animation/Animation";
 
 const name = content.landingSection.name.toUpperCase();
 const titleOne = content.landingSection.titleOne;

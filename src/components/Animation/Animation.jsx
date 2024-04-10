@@ -1,18 +1,13 @@
 import { useState, useEffect } from "react";
-// import styles from './textAnimation.module.css'
 import styles from "./Animation.module.css"
+import content from "../content.json";
 
 const Animation = () => {
   const [textIndex, ] = useState(0);
   const [displayText, setDisplayText] = useState("");
 
   useEffect(() => {
-    const dataText = [
-      " Engineer",
-      " Innovator",
-      " Random ",
-      " Words",
-    ];
+    const dataText = content.landingSection.titleTwo;
     const typeWriter = (text, i, fnCallback) => {
       if (i < text.length) {
         setDisplayText(text.substring(0, i + 1));
