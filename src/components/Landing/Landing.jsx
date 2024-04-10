@@ -1,9 +1,11 @@
 import styles from "./Landing.module.css";
 import content from "../content.json";
+import Animation
+ from "../Animation/Animation";
 
 const name = content.landingSection.name.toUpperCase();
 const titleOne = content.landingSection.titleOne;
-const titleTwo = content.landingSection.titleTwo;
+// const titleTwo = content.landingSection.titleTwo;
 
 const Landing = () => {
   return (
@@ -14,7 +16,7 @@ const Landing = () => {
         <div className={styles.divider}></div>
       </div>
       <div className={styles.titleTwo}>
-        <span className={styles.addSign}>+</span> {titleTwo}
+        <span className={styles.addSign}>+</span> <Animation />
       </div>
 
       <span className={styles.scrollbtn}>

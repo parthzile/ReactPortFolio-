@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Gotham-medium;
+  src: url(../../assets/fonts/gotham-medium.woff2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.h1 {
+  display: flex;
+  font-family: Gotham-medium;
+  font-size: 100px;
+  color: white;
+}
+.span {
+  border-right: 7px solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}

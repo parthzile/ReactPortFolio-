@@ -17,7 +17,7 @@
 }
 
 .name {
-  color: #cecece;
+  color: #CECECE;
   font-size: 23px;
   font-family: Gotham-medium;
   letter-spacing: 5px;
@@ -29,11 +29,14 @@
   align-items: center;
 }
 
-.titleOne,
-.titleTwo {
+.titleOne, .titleTwo{
   color: white;
   font-family: Gotham-medium;
   font-size: 100px;
+}
+
+.titleTwo{
+  display: flex;
 }
 
 .divider {
@@ -46,6 +49,7 @@
 
 .addSign {
   color: #707070;
+  padding-right: 15px;
 }
 
 @-webkit-keyframes ani-mouse {
