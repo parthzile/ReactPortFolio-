@@ -2,7 +2,7 @@ import  { useState, useEffect } from 'react';
 import styles from "./DecodeText.module.css"
 // eslint-disable-next-line react/prop-types
 const DecodeText = ({name}) => {
-  const [letters] = useState("जगहबपरकतसलवनमऊभङघधझथखउइअएणळ");
+  const [letters] = useState("कखगघड़चछजझञटठडढणतथदधनपफबभमयरलवशषसह");
   const [intervalId, setIntervalId] = useState(null);
   const [text, setText] = useState(name);
 
@@ -18,7 +18,7 @@ const DecodeText = ({name}) => {
           if(index < iteration) {
             return text[index];
           }
-          return letters[Math.floor(Math.random() * 26)];
+          return letters[Math.floor(Math.random() * 33)];
         })
         .join("")
       );
@@ -28,7 +28,7 @@ const DecodeText = ({name}) => {
       }
 
       iteration += 1 / 3;
-    }, 40);
+    }, 45);
 
     setIntervalId(newIntervalId);
   };
