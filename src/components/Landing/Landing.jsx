@@ -2,7 +2,7 @@ import styles from "./Landing.module.css";
 import content from "../content.json";
 import Animation from "../Animation/Animation";
 import { useState,useEffect } from "react";
-// import DecodeText from "../../components/DecodeText/DecodeText"
+import DecodeText from "../DecodeText/DecodeText";
 
 
 const name = content.landingSection.name.toUpperCase();
@@ -14,7 +14,7 @@ const Landing = () => {
   useEffect(() => {
       const handleScroll = () => {
           const scrollTop = window.scrollY || document.documentElement.scrollTop;
-          const shouldFade = scrollTop > 100; // Adjust the scroll position threshold as needed
+          const shouldFade = scrollTop > 100;
 
           setIsVisible(!shouldFade);
       };
@@ -28,8 +28,8 @@ const Landing = () => {
 
   return (
     <div className={styles.landing}>
-      {/* <DecodeText text="HELLO WROLD"/> */}
-      <div className={styles.name}>{name}</div>
+      <DecodeText name = {name}/>
+      {/* <div className={styles.name}>{name}</div> */}
       <div className={styles.titleContainer}>
         <div className={styles.titleOne}>{titleOne}</div>
         <div className={styles.divider}></div>

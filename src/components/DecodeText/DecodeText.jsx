@@ -1,61 +1,51 @@
-import { useEffect } from 'react';
-import { gsap } from 'gsap'; // Make sure to import gsap library
-
+import  { useState, useEffect } from 'react';
+import styles from "./DecodeText.module.css"
 // eslint-disable-next-line react/prop-types
-const CodedText = ({ text, fromRight }) => {
-  useEffect(() => {
-    const randChar = () => {
-      let c = 'अनभवपहनमकनह';
-      c = c[Math.floor(Math.random() * c.length)];
-      return Math.random() > 0.5 ? c : c.toUpperCase();
-    };
+const DecodeText = ({name}) => {
+  const [letters] = useState("जगहबपरकतसलवनमऊभङघधझथखउइअएणळ");
+  const [intervalId, setIntervalId] = useState(null);
+  const [text, setText] = useState(name);
 
-    document.querySelectorAll('.codedText').forEach((t) => {
-      const arr1 = t.innerHTML.split('');
-      const arr2 = [];
-      arr1.forEach((char, i) => (arr2[i] = randChar())); // fill arr2 with random characters
-      t.onpointerover = () => {
-        const tl = gsap.timeline();
-        let step = 0;
-        tl.fromTo(
-          t,
-          {
-            innerHTML: arr2.join(''),
-            color: 'white',
-            background: 'black',
-          },
-          {
-            duration: arr1.length / 20, // duration based on text length
-            ease: 'power4.in',
-            delay: 0.1,
-            color: '#fff',
-            background: '#000',
-            onUpdate: () => {
-              const p = Math.floor(tl.progress() * arr1.length); // whole number from 0 - text length
-              if (step !== p) {
-                // throttle the change of random characters
-                step = p;
-                arr1.forEach((char, i) => (arr2[i] = randChar()));
-                let pt1 = arr1.join('').substring(p, 0),
-                  pt2 = arr2.join('').substring(arr2.length - p, 0);
-                if (t.classList.contains('fromRight')) {
-                  pt1 = arr2.join('').substring(arr2.length - p, 0);
-                  pt2 = arr1.join('').substring(arr1.length - p);
-                }
-                t.innerHTML = pt1 + pt2; // update text
-              }
-            },
+  const handleMouseOver = () => {
+    let iteration = 0;
+
+    clearInterval(intervalId);
+
+    const newIntervalId = setInterval(() => {
+      setText(prevText => prevText
+        .split("")
+        .map((letter, index) => {
+          if(index < iteration) {
+            return text[index];
           }
-        );
-      };
-    });
-  }, []);
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("")
+      );
+
+      if(iteration >= text.length){ 
+        clearInterval(newIntervalId);
+      }
+
+      iteration += 1 / 3;
+    }, 40);
+
+    setIntervalId(newIntervalId);
+  };
+
+  useEffect(() => {
+    handleMouseOver()
+
+    return () => clearInterval(intervalId);
+  });
 
   return (
-    <div className={`codedText ${fromRight ? 'fromRight' : ''}`}>
+    <h1
+      className={styles.name}
+    >
       {text}
-    </div>
+    </h1>
   );
 };
 
-export default CodedText;
+export default DecodeText;
