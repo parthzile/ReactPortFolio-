@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar"
 import AboutMeLanding from "../../components/AboutMeLanding/AboutMeLanding"
+import  Timeline  from "../../components/Timeline/Timeline"
 import styles from "./AboutMePage.module.css"
 
 export const AboutMePage = () => {
@@ -12,6 +13,7 @@ export const AboutMePage = () => {
 
         <div className={styles.rightContainer}>
           <AboutMeLanding />
+          <Timeline />
         </div>
       </div>
     </>
