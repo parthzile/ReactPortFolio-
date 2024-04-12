@@ -13,7 +13,7 @@ const AboutMe = () => {
 
         <button className={styles.button}>
           {content.aboutMe.button}
-          <span>
+          <span className={styles.buttonIcon}>
             <FaArrowRight />
           </span>
         </button>

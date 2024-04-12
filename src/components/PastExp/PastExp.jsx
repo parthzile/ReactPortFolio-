@@ -16,7 +16,7 @@ const AboutMe = () => {
 
         <button className={styles.button}>
           {content.pastExp.button}
-          <span>
+          <span className={styles.buttonIcon}>
             <FaArrowRight />
           </span>
         </button>

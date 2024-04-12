@@ -54,3 +54,9 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 74.49%, 93.29% 100%, 0% 100%);
   background-color: #00eeff;
 }
+
+.buttonIcon{
+  font-size: 15px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+}

@@ -1,8 +1,10 @@
 import  { useState, useEffect } from 'react';
 import styles from "./DecodeText.module.css"
+
 // eslint-disable-next-line react/prop-types
-const DecodeText = ({name}) => {
+const DecodeText = ({ name }) => {
   const [letters] = useState("कखगघड़चछजझञटठडढणतथदधनपफबभमयरलवशषसह");
+  // eslint-disable-next-line no-unused-vars
   const [intervalId, setIntervalId] = useState(null);
   const [text, setText] = useState(name);
 
@@ -15,7 +17,7 @@ const DecodeText = ({name}) => {
       setText(prevText => prevText
         .split("")
         .map((letter, index) => {
-          if(index < iteration) {
+          if (index < iteration) {
             return text[index];
           }
           return letters[Math.floor(Math.random() * 33)];
@@ -23,26 +25,25 @@ const DecodeText = ({name}) => {
         .join("")
       );
 
-      if(iteration >= text.length){ 
+      if (iteration >= text.length) {
         clearInterval(newIntervalId);
       }
 
       iteration += 1 / 3;
     }, 45);
 
-    setIntervalId(newIntervalId);
+    // setIntervalId(newIntervalId);
   };
 
   useEffect(() => {
-    handleMouseOver()
+    handleMouseOver();
 
+    // Clean up the interval on unmount
     return () => clearInterval(intervalId);
-  });
+  }, [intervalId]); 
 
   return (
-    <h1
-      className={styles.name}
-    >
+    <h1 className={styles.name} >
       {text}
     </h1>
   );

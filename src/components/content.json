@@ -1,14 +1,9 @@
 {
-  "navLinks": ["contact", "details", "projects", "articles"],
+  "navLinks": ["contact", "details", "projects"],
   "landingSection": {
     "name": "parth zile",
     "titleOne": "Developer",
-    "titleTwo": [
-      "Human",
-      "Engineer",
-      "Innovator",
-      "Entrepreneur"
-    ]
+    "titleTwo": ["Human", "Engineer", "Innovator", "Entrepreneur"]
   },
   "aboutMe": {
     "srNo": "01",
@@ -20,22 +15,22 @@
     "srNo": "02",
     "titleOne": "past experience",
     "description": "Designing a platform to help educators build better online courseware",
-    "button": "click here"
+    "button": "Past Exp"
   },
   "intro": {
     "delegation": "hi there",
-    "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    "introduction": "I am an individual who loves to think & learn. I like find solutions of existing problems. I feel the solutions that have real life applications & efficient are innovative solutions, need if the generation. Managing people, communicating & getting things done are my forte. I am always excited to grab new opportunity. I am a punctual person & don't like missing my deadlines. I am scared of my unfulfilled potential, which at times makes me put extra efforts than required. I personally feel there is more to me than all this."
   },
   "hindText": {
-    "whoAmI" : "परिचय",
-    "aboutMe" : "पैहचान",
-    "experience" : "अनुभव",
-    "404Route" : "ग़लत मार्ग"
+    "whoAmI": "परिचय",
+    "aboutMe": "पैहचान",
+    "experience": "अनुभव",
+    "404Route": "ग़लत मार्ग"
   },
-  "404page" : {
-    "404error" : "404",
-    "404title" : "ERROR: REDACTED",
-    "404description" : "This page could not be found. It either doesn’t exist or was deleted.Or perhaps you don’t exist and this webpage couldn’t find you.",
-    "404button" : "Back to Homepage"
+  "404page": {
+    "404error": "404",
+    "404title": "ERROR: REDACTED",
+    "404description": "This page could not be found. It either doesn’t exist or was deleted.Or perhaps you don’t exist and this webpage couldn’t find you.",
+    "404button": "Back to Homepage"
   }
 }
