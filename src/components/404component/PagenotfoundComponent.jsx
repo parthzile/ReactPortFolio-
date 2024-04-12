@@ -1,29 +1,32 @@
 import styles from "./PagenotfoundComponent.module.css";
 import content from "../content.json";
-import { FaArrowRight } from "react-icons/fa";
 import HindiText from "../HindiText/HindiText";
+import video from "../../assets/notfound.mp4";
+// import {Link} from 'react-router-dom'
 
 const PagenotfoundComponent = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <p className={styles.srNo}>404</p>
-        <h2 className={styles.titleOne}>ERROR: REDACTED</h2>
+        <p className={styles.srNo}>{content["404page"]["404error"]}</p>
+        <h2 className={styles.titleOne}>{content["404page"]["404title"]}</h2>
         <p className={styles.description}>
-          This page could not be found. It either doesn’t exist or was deleted.
-          Or perhaps you don’t exist and this webpage couldn’t find you.
+          {content["404page"]["404description"]}
         </p>
-
         <button className={styles.button}>
-          {content.aboutMe.button}
-          <span>
-            <FaArrowRight />
-          </span>
+          <a href="/">{content["404page"]["404button"]}</a>
         </button>
       </div>
 
       <div className={styles.creative}>
-        <HindiText text="aboutMe" />
+        <div className={styles.videoDiv}>
+          <video autoPlay loop className={styles.video}>
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <HindiText text="404Route" />
       </div>
     </div>
   );

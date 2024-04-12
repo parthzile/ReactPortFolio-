@@ -29,6 +29,13 @@
   "hindText": {
     "whoAmI" : "परिचय",
     "aboutMe" : "पैहचान",
-    "experience" : "अनुभव"
+    "experience" : "अनुभव",
+    "404Route" : "ग़लत मार्ग"
+  },
+  "404page" : {
+    "404error" : "404",
+    "404title" : "ERROR: REDACTED",
+    "404description" : "This page could not be found. It either doesn’t exist or was deleted.Or perhaps you don’t exist and this webpage couldn’t find you.",
+    "404button" : "Back to Homepage"
   }
 }
