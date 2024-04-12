@@ -32,5 +32,10 @@
     "404title": "ERROR: REDACTED",
     "404description": "This page could not be found. It either doesn’t exist or was deleted.Or perhaps you don’t exist and this webpage couldn’t find you.",
     "404button": "Back to Homepage"
+  },
+  "aboutmePage" : {
+    "title" : "About Me",
+    "description" : "I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.",
+    "skills" : ["html", "css" , "javascript" , "reactjs" , "c++"]
   }
 }

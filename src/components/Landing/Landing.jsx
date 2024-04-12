@@ -29,7 +29,6 @@ const Landing = () => {
   return (
     <div className={styles.landing}>
       <DecodeText name = {name}/>
-      {/* <div className={styles.name}>{name}</div> */}
       <div className={styles.titleContainer}>
         <div className={styles.titleOne}>{titleOne}</div>
         <div className={styles.divider}></div>
