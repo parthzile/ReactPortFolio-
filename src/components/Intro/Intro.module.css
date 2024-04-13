@@ -19,6 +19,9 @@
 
 .creative {
   width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
   /* border: 1px solid yellow; */
 }
 
@@ -73,4 +76,27 @@
 .ml11 .letter {
   display: inline-block;
   line-height: 1em;
+}
+
+.video {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  z-index: 1;
+  padding-top: 45px;
+  transform: scale(1.5);    
+}
+
+.videoDiv {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  z-index: 1;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 75px),
+    calc(100% - 75px) 100%,
+    0 100%
+  );
 }

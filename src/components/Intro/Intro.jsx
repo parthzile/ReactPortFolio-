@@ -1,7 +1,7 @@
 import styles from "./Intro.module.css";
 import content from "../content.json";
 import HindiText from "../HindiText/HindiText";
-
+import video from "../../assets/intro.mp4";
 const Intro = () => {
   return (
     <div className={styles.container}>
@@ -10,6 +10,12 @@ const Intro = () => {
         <p className={styles.description}>{content.intro.introduction}</p>
       </div>
       <div className={styles.creative}>
+      <div className={styles.videoDiv}>
+          <video autoPlay loop className={styles.video}>
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <HindiText text="whoAmI"/>
       </div>
     </div>
