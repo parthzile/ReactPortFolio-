@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="404" element={<PagenotfoundPage />} />
         <Route path="/aboutme" element={<AboutMePage />} />
+        <Route path="*" element={<PagenotfoundPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
