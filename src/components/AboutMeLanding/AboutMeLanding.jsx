@@ -1,8 +1,5 @@
 import styles from "./AboutMeLanding.module.css";
 import content from "../content.json";
-// import DecodeText from "../DecodeText/DecodeText"
-
-// const title = content.aboutmePage.title
 
 const AboutMeLanding = () => {
   return (
