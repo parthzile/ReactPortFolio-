@@ -2,7 +2,6 @@ import styles from "./PagenotfoundComponent.module.css";
 import content from "../content.json";
 import HindiText from "../HindiText/HindiText";
 import video from "../../assets/notfound.mp4";
-// import {Link} from 'react-router-dom'
 
 const PagenotfoundComponent = () => {
   return (

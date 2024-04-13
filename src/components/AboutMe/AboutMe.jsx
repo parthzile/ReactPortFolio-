@@ -2,6 +2,8 @@ import styles from "./About.module.css";
 import content from "../content.json";
 import { FaArrowRight } from "react-icons/fa";
 import HindiText from "../HindiText/HindiText";
+import video from "../../assets/notfound.mp4";
+
 
 const AboutMe = () => {
   return (
@@ -20,6 +22,12 @@ const AboutMe = () => {
       </div>
 
       <div className={styles.creative}>
+      <div className={styles.videoDiv}>
+          <video autoPlay loop className={styles.video}>
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       <HindiText text="aboutMe"/>
       </div>
     </div>
