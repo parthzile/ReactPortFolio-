@@ -11,7 +11,7 @@ const Intro = () => {
       </div>
       <div className={styles.creative}>
       <div className={styles.videoDiv}>
-          <video autoPlay loop className={styles.video}>
+          <video autoPlay loop  muted className={styles.video}>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

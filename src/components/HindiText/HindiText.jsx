@@ -4,7 +4,7 @@ import styles from "./HindiText.module.css"
 const HindiText = ({text}) => {
     return (
         <>
-            <p className={styles.bgText}>{content.hindText[text]}</p>
+            <p className={styles.bgText}>{content.hindText[text]} </p>
         </>
     )
 }
