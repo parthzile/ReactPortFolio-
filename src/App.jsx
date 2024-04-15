@@ -22,7 +22,7 @@ function App() {
 
       </div>
         <div className={styles.mobileView}>
-          Website for mobile under developement,<br></br> please view the website in Desktop view for<br></br> the best experience
+          Website for mobile under development,<br></br> please view the website in Desktop view for<br></br> the best experience
         </div>
     </>
   );
