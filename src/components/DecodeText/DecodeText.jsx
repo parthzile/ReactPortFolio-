@@ -43,7 +43,7 @@ const DecodeText = ({ name }) => {
   }, [intervalId]); 
 
   return (
-    <h1 className={styles.name} onMouseEnter={handleMouseOver}>
+    <h1 className={styles.name} >
       {text}
     </h1>
   );

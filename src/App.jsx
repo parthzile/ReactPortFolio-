@@ -19,7 +19,11 @@ function App() {
           <PastExp />
           <Intro />
         </div>
+
       </div>
+        <div className={styles.mobileView}>
+          Website for mobile under developement,<br></br> please view the website in Desktop view for<br></br> the best experience
+        </div>
     </>
   );
 }
